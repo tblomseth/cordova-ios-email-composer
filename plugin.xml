@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.mymee.cordova.plugins.ios-email-composer"
+        version="0.1.0">
+
+    <name>Email Composer Plugin for Cordova 3 iOS</name>
+    <description>This Cordova plugin provides your app with access to a native iOS email composer</description>
+    <license>MIT</license>
+    <keywords>native ui email composer</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <!-- ios -->
+    <platform name="ios">
+
+        <js-module src="www/email-composer.js" name="EmailComposer">
+            <clobbers target="window.EmailComposer"/>
+        </js-module>
+
+        <config-file target="config.xml" parent="/widget">
+            <feature name="EmailComposer">
+                <param name="ios-package" value="CDVEmailComposer"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVEmailComposer.h"/>
+        <source-file src="src/ios/CDVEmailComposer.m"/>
+
+    </platform>
+
+</plugin>

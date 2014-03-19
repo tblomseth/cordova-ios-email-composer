@@ -1,0 +1,27 @@
+{
+  "name": "cordova-ios-email-composer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tblomseth/cordova-ios-email-composer.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "ios",
+    "native",
+    "email",
+    "composer"
+  ],
+  "author": "tblomseth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tblomseth/cordova-ios-email-composer/issues"
+  },
+  "homepage": "https://github.com/tblomseth/cordova-ios-email-composer"
+}
