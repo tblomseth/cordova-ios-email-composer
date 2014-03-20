@@ -9,9 +9,9 @@
 //  Copyright 2010 Nitobi. All rights reserved.
 //
 
-#import "EmailComposer.h"
+#import "CDVEmailComposer.h"
 
-@implementation EmailComposer
+@implementation CDVEmailComposer
 
 @synthesize callbackId = _callbackId;
 
