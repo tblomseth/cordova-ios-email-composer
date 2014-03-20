@@ -36,3 +36,5 @@ EmailComposer.prototype.showEmailComposer = function ( callback, subject, body, 
 
     exec( callback, null, this.cdvService, "showEmailComposer", [args] );
 }
+
+module.exports = new EmailComposer();
