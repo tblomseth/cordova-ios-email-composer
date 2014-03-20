@@ -13,12 +13,10 @@
 #import <MessageUI/MFMailComposeViewController.h>
 #import <Cordova/CDVPlugin.h>
 
-@interface EmailComposer : CDVPlugin < MFMailComposeViewControllerDelegate > {
-  
-}
+@interface CDVEmailComposer: CDVPlugin < MFMailComposeViewControllerDelegate > {}
 
 @property (nonatomic, copy) NSString* callbackId;
 
-- (void) showEmailComposer::(CDVInvokedUrlCommand *)command;
+- (void) showEmailComposer:(CDVInvokedUrlCommand *)command;
 
 @end

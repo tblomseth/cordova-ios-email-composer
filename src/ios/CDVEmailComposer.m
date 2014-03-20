@@ -15,7 +15,7 @@
 
 @synthesize callbackId = _callbackId;
 
-- (void) showEmailComposer::(CDVInvokedUrlCommand *)command
+- (void) showEmailComposer:(CDVInvokedUrlCommand *)command
 {
   self.callbackId = command.callbackId;
   
