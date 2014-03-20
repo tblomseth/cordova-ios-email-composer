@@ -2,18 +2,17 @@
  * Based on https://github.com/phonegap/phonegap-plugins/blob/DEPRECATED/iOS/EmailComposer/EmailComposer.js
  *
  */
-var exec = require("cordova/exec");
+var exec = require( "cordova/exec" );
 
 function EmailComposer() {
     this.cdvService = 'EmailComposer';
-}
-
-EmailComposer.ComposeResultType = {
-    Cancelled: 0,
-    Saved: 1,
-    Sent: 2,
-    Failed: 3,
-    NotSent: 4
+    this.ComposeResultType = {
+        Cancelled: 0,
+        Saved: 1,
+        Sent: 2,
+        Failed: 3,
+        NotSent: 4
+    }
 }
 
 /*
